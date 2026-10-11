@@ -77,3 +77,23 @@ button:disabled { opacity: .65; cursor: wait; }
 .reject-button { background: #4d3438; color: #fff; }
 .reject-button:hover { background: #6f4149; }
 @media (max-width: 760px) { .directory-section, .admin-dashboard { padding: 18px; } .stats { gap: 7px; } .stats > div { padding: 12px 6px; } .stats strong { font-size: 23px; } .moderation-buttons { width: 100%; } .moderation-buttons button { flex: 1; } }
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background-image: url("/embrione-logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: min(85vw, 850px);
+
+    opacity: 0.12;
+    pointer-events: none;
+    z-index: 0;
+}
+
+#root {
+    position: relative;
+    z-index: 1;
+}
